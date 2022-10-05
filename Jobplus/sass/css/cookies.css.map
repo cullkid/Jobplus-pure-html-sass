@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,eAAe;EAEtC,gBAAgB,EAAE,WAAW;EAC7B,KAAK,EAAE,YAAY;EACnB,OAAO,EAAE,KAAK;EACd,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CAKd;;AAdD,AAWE,OAXK,CAWL,CAAC,CAAC;EACA,eAAe,EAAE,SAAS;CAC3B",
+    "sources": [
+        "../components/cookies.scss"
+    ],
+    "names": [],
+    "file": "cookies.css"
+}

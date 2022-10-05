@@ -1,0 +1,161 @@
+.listing {
+  margin: 30rem 10rem;
+  color: var(--gamma);
+
+  &__mt {
+    margin-top: 20rem;
+  }
+
+  &__more {
+    h1 {
+      margin: 25rem 0;
+      font-size: 30rem;
+    }
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      background-color: var(--light);
+      padding: 7rem 9rem;
+      font-size: 20rem;
+      border-radius: 16rem;
+      margin-right: 15rem;
+      margin-bottom: 15rem;
+    }
+  }
+
+  &__saved-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    padding-top: 5rem;
+
+    li:first-of-type {
+      display: flex;
+      span {
+        margin-right: 20rem;
+        margin-top: 10rem;
+      }
+
+      b {
+        margin-top: 20rem;
+        font-size: 20rem;
+      }
+    }
+
+    li:last-of-type {
+      background-color: var(--light);
+      color: var(--skills);
+      padding: 2rem 3rem;
+      border-radius: 4rem;
+      font-size: 20rem;
+      margin-top: 10rem;
+    }
+  }
+
+  &__card {
+    border: 2px var(--beta) solid;
+    background-color: var(--light);
+    padding: 15rem;
+    border-radius: 5rem;
+    box-shadow: 1px 2px 3px 1px var(--elements);
+    margin-bottom: 20rem;
+    margin-top: 20rem;
+
+    &--apply {
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &__header {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 5rem;
+  }
+
+  &__title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    color: var(--beta);
+    font-size: 30rem;
+  }
+
+  &__saved {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-self: right;
+  }
+
+  &__company {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    font-size: 25rem;
+    span {
+      color: var(--beta);
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10rem;
+
+    margin: 15rem 0;
+    font-size: 14rem;
+
+    li {
+      display: flex;
+      img {
+        margin-right: 10rem;
+      }
+    }
+
+    img:nth-of-type(1) {
+      margin-left: 20rem;
+    }
+
+    li:nth-of-type(2) {
+      justify-self: right;
+    }
+
+    span {
+      margin-top: 10rem;
+      font-size: 20rem;
+    }
+  }
+
+  &__detail {
+    /*margin-top: 20rem;*/
+    font-size: 20rem;
+    line-height: 20rem;
+  }
+
+  &__cta {
+    font-size: 20rem;
+    text-decoration: underline;
+    text-align: right;
+    display: block;
+
+    &--light {
+      color: var(--beta);
+    }
+
+    &--alert {
+      color: var(--alert);
+    }
+  }
+
+  @include respond-to("small") {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+}
